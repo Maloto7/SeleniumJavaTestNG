@@ -1,13 +1,18 @@
 package test;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import base.pom.selenium.enums.Browsers;
+import com.aventstack.extentreports.ExtentReports;
+
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.*;
 import pages.Login_Page;
 
-import static junit.framework.TestCase.assertEquals;
-
+import static org.testng.AssertJUnit.*;
+//@Listeners(base.pom.selenium.listeners.TestNGListeners.class)
 public class Login_Test {
 
     private WebDriver driver;
@@ -18,35 +23,39 @@ public class Login_Test {
     String invalidUserName = "agustin.colque001@gmail.com";
     String InvalidPassword = "Coflesto72";
 
-
-    @Before
-    public void setUp(){
+    @BeforeMethod
+    public void setUp() {
         url = "https://trello.com/login";
-        loginPage = new Login_Page(driver);
-        driver = loginPage.chromeDriverConnection(false);
+        loginPage = new Login_Page();
+        driver = loginPage.driverConnection(Browsers.CHROME, true);
         driver.manage().window().maximize();
         loginPage.goTo(url);
     }
 
-    @After
-    public void tearDown(){
+    @AfterMethod
+    public void tearDown() {
         driver.quit();
     }
 
     @Test
-    public void successLogin() throws InterruptedException {
-        loginPage.loginUser(userName,password);
-        assertEquals("AC",loginPage.homeUserName());
+    public void successLogin() throws Exception {
+        loginPage.loginUser(userName, password);
+        assert "AC".equals(loginPage.homeUserName());
     }
+
     @Test
     public void invalidUserName() throws InterruptedException {
-        loginPage.loginUser(invalidUserName,password);
-        assertEquals("There isn't an account for this email",loginPage.loginValidationMessage());
+        loginPage.loginUser(invalidUserName, password);
+        assertEquals("There isn't an account for this email",
+                loginPage.loginValidationMessage());
     }
+
     @Test
-    public void invalidPassword() throws InterruptedException {
-        loginPage.loginUser(userName,InvalidPassword);
-        assertEquals("Incorrect email address and / or password. Do you need help logging in?",loginPage.loginValidationMessage());
+    public void invalidPassword()  {
+        loginPage.loginUser(userName, InvalidPassword);
+        assertEquals("Incorrect email address and / or password. Do you need help logging in?",
+                loginPage.loginValidationMessage());
     }
+
 }
 

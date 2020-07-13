@@ -1,34 +1,40 @@
 package base.pom.selenium;
+import base.pom.selenium.interfaces.IBrowserConnection;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.awt.peer.SystemTrayPeer;
 import java.util.List;
+import base.pom.selenium.enums.Browsers;
+
 
 public class Base {
     private WebDriver driver;
     private Actions actions;
     private WebDriverWait wait;
-    public Base(WebDriver driver){
-        this.driver = driver;
-    }
 
-    public WebDriver chromeDriverConnection(Boolean headless){
-        System.setProperty("webdriver.chrome.driver","./src/test/resources/chromedriver/chromedriver.exe");
-        if(headless)
-        {
-            ChromeOptions options= new ChromeOptions();
-            options.addArguments("--headless");
-            driver = new ChromeDriver(options);
-        }else{
-            driver = new ChromeDriver();
+
+    public WebDriver driverConnection(Browsers browser, Boolean headless){
+
+        try {
+            BrowserFactory browserConnection = new BrowserFactory();
+            IBrowserConnection browserDriver = browserConnection.getBrowserConnection(browser);
+            this.driver = browserDriver.driverConnection(headless);
+            this.actions = new Actions(driver);
+            this.wait = new WebDriverWait(driver,30);
+        }catch (Exception e){
+            System.out.println("The message is: " + e.getMessage());
+            System.out.println("The cause is: " + e.getCause() );
+            e.printStackTrace();
         }
-        this.actions = new Actions(driver);
-        this.wait = new WebDriverWait(driver,30);
         return driver;
-
     }
 
     public void moveToElement(By locator){

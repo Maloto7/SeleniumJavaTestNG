@@ -1,9 +1,8 @@
 package pages;
 
-import base.pom.selenium.BaseTrello;
+import base.trello.BaseTrello;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import base.pom.selenium.Base;
 
 public class Login_Page extends BaseTrello {
 
@@ -13,9 +12,9 @@ public class Login_Page extends BaseTrello {
     By userNameLocator = By.xpath("//div[@title='agustin colque (agustincolque)']/span");
     By wrongCredentialsLocator = By.xpath("//div[@class='quick-switch']");
 
-    public Login_Page(WebDriver driver){
-        super(driver);
-    }
+//    public Login_Page(WebDriver driver){
+//        super(driver);
+//    }
     public void loginUser(String userName, String password) {
 
         if(isDisplayed(loginButtonLocator)){
@@ -31,7 +30,7 @@ public class Login_Page extends BaseTrello {
         waitElementVisible(userNameLocator);
         return getText(userNameLocator);
     }
-    public String loginValidationMessage() throws InterruptedException {
+    public String loginValidationMessage()  {
         waitElementVisible(wrongCredentialsLocator);
         return getText(wrongCredentialsLocator);
     }

@@ -1,12 +1,11 @@
 package test;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import pages.Boards_Page;
 
-import static junit.framework.TestCase.assertEquals;
+import base.pom.selenium.enums.Browsers;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.*;
+import pages.Boards_Page;
+import static org.testng.AssertJUnit.*;
 
 public class Boards_Test {
 
@@ -16,25 +15,26 @@ public class Boards_Test {
     String userName = "agustin.colque@gmail.com";
     String password = "Coflesto7";
 
-    @Before
+    @BeforeMethod
     public void setUp(){
         url = "https://trello.com/login";
-        BoardsPage = new Boards_Page(driver);
-        driver = BoardsPage.chromeDriverConnection(false);
+        BoardsPage = new Boards_Page();
+        driver = BoardsPage.driverConnection(Browsers.CHROME,true);
         driver.manage().window().maximize();
         BoardsPage.goTo(url);
-        BoardsPage.loginTrello();
+        BoardsPage.loginTrello(userName,password);
     }
 
-    @After
+    @AfterMethod
     public void tearDown(){
         driver.quit();
     }
 
     @Test
-    public void successLogin() throws InterruptedException {
+    public void createNewBoard() throws InterruptedException {
         BoardsPage.createNewBoard("Test Board");
         assertEquals("Test Board",BoardsPage.boarTitle());
+        BoardsPage.deleteBoard();
     }
 }
 
