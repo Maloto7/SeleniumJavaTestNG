@@ -40,7 +40,7 @@ public class BaseTrello extends Base{
         click(deleteBoardLocator);
         click(confirmLocator);
     }
-    public void createNewBoard(){
+    public void createBoard(String title){
         waitElementVisible(newBoardLocator);
         click(newBoardLocator);
         type(title,inputTitleLocator);
@@ -49,4 +49,5 @@ public class BaseTrello extends Base{
         click(menuTeamLocator);
         click(createBoardLocator);
     }
+
 }

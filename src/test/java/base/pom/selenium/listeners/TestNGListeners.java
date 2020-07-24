@@ -5,13 +5,16 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.testng.*;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
+
 public class TestNGListeners implements ITestListener, ISuiteListener {
 
     ExtentSparkReporter spark;
     ExtentReports extent;
     ExtentTest test;
     public void onStart(ISuite suite) {
-        ExtentSparkReporter spark = new ExtentSparkReporter("./reports/extent.html");
+        spark = new ExtentSparkReporter("./reports/extent.html");
         extent = new ExtentReports();
         extent.attachReporter(spark);
     }
@@ -26,10 +29,14 @@ public class TestNGListeners implements ITestListener, ISuiteListener {
 
     public void onTestSuccess(ITestResult result) {
         test.pass("The test passed successfully");
+
     }
 
     public void onTestFailure(ITestResult result) {
-        test.fail("The test failed");
+        String str = result.getThrowable().toString();
+        String strNew = str.replace("<", "\"");
+        strNew = strNew.replace(">", "\"");
+        test.fail("The test failed; Test Name: " + result.getName()+"; Message: " + strNew);
     }
 
     public void onTestSkipped(ITestResult result) {

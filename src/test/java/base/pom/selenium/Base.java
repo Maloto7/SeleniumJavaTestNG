@@ -114,6 +114,9 @@ public class Base {
     public void click(WebElement element){
         element.click();
     }
+    public void pressEnterKey(By locator){
+        driver.findElement(locator).sendKeys(Keys.ENTER);
+    }
 
     public Boolean isDisplayed(By locator){
         try {
@@ -122,10 +125,14 @@ public class Base {
             return false;
         }
     }
+    public Boolean isEnable(By locator){
+        return driver.findElement(locator).isEnabled();
+    }
 
     public void goTo(String url){
         driver.get(url);
     }
+
 
 
 }

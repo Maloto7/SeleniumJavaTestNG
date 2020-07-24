@@ -26,7 +26,7 @@ public class Login_Page extends BaseTrello {
         }
     }
 
-    public String homeUserName() throws InterruptedException {
+    public String homeUserName(){
         waitElementVisible(userNameLocator);
         return getText(userNameLocator);
     }

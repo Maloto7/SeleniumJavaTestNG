@@ -1,22 +1,17 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import base.trello.BaseTrello;
 
 
 public class Boards_Page extends BaseTrello {
-    Login_Page loginPage;
     By newBoardLocator = By.xpath("(//div[@class='board-tile mod-add'])[1]");
     By inputTitleLocator = By.cssSelector(".subtle-input");
     By menuTeamLocator = By.linkText("No team");
-    By createBoardLocator = By.cssSelector(".button > span:nth-child(2)");
+    By createBoardLocator = By.cssSelector(".button");
     By menuTeam = By.cssSelector(".org-chooser-trigger > .icon-sm");
-    By boarTitleLocator = By.cssSelector(".js-board-editing-target");
-
-//    public Boards_Page(){
-//        super(driver);
-//    }
+    By boardTitleLocator = By.cssSelector(".js-board-editing-target");
+    By boardTitleInputLocator = By.cssSelector(".board-name-input");
 
     public void createNewBoard(String title){
         waitElementVisible(newBoardLocator);
@@ -28,9 +23,28 @@ public class Boards_Page extends BaseTrello {
         click(createBoardLocator);
     }
 
+    public Boolean boardButtonIsEnable(){
+        waitElementVisible(newBoardLocator);
+        click(newBoardLocator);
+        waitElementToBeClickable(menuTeam);
+        click(menuTeam);
+        click(menuTeamLocator);
+        return isEnable(createBoardLocator);
+    }
+
+    public void changeNameBoard(String title){
+        waitElementVisible(boardTitleLocator);
+        click(boardTitleLocator);
+        type(title,boardTitleInputLocator);
+        pressEnterKey(boardTitleInputLocator);
+    }
+
+
+
+
     public String boarTitle() {
-        waitElementVisible(boarTitleLocator);
-        return getText(boarTitleLocator);
+        waitElementVisible(boardTitleLocator);
+        return getText(boardTitleLocator);
     }
 
 
