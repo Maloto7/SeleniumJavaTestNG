@@ -40,10 +40,11 @@ public class BaseTrello extends Base{
     public void createBoard(String title){
         waitElementVisible(newBoardLocator);
         click(newBoardLocator);
-        waitElementToBeClickable(inputTitleLocator);
+        waitElementVisible(inputTitleLocator);
         type(title,inputTitleLocator);
         waitElementToBeClickable(menuTeam);
         click(menuTeam);
+        waitElementVisible(menuTeamLocator);
         click(menuTeamLocator);
         click(createBoardLocator);
     }

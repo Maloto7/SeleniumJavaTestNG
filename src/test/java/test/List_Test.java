@@ -40,13 +40,6 @@ public class List_Test {
     }
 
     @Test
-    public void changeListName() {
-        ListPage.createNewList("Test list");
-        ListPage.changeNameList("Test list2");
-        assertEquals("Test list2", ListPage.listTitle());
-    }
-
-    @Test
     public void copyList() {
         ListPage.createNewList("Test list");
         ListPage.copyListBoard("copy list");;

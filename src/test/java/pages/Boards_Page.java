@@ -40,6 +40,7 @@ public class Boards_Page extends BaseTrello {
     public void changeNameBoard(String title){
         waitElementVisible(boardTitleLocator);
         click(boardTitleLocator);
+        waitElementVisible(boardTitleInputLocator);
         type(title,boardTitleInputLocator);
         pressEnterKey(boardTitleInputLocator);
     }

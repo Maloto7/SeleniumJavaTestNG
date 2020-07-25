@@ -10,6 +10,8 @@ public class List_Page extends BaseTrello {
     By inputTitleLocator = By.cssSelector(".list-name-input");
     By addListLocator = By.cssSelector("input.primary.mod-list-add-button.js-save-edit");
     By listTitleInputLocator = By.cssSelector(".list-header-name.mod-list-name.js-list-name-input");
+    By listChangeTitleInputLocator = By.cssSelector(".list-header-name");
+
     By titleListLocator = By.cssSelector(".list-header-target");
     By titleInputListLocator = By.cssSelector(".list-header-name");
     By listMenuLocator = By.cssSelector(".list-header-extras-menu");
@@ -38,7 +40,7 @@ public class List_Page extends BaseTrello {
     }
 
     public void createNewList(String title){
-        waitElementToBeClickable(inputTitleLocator);
+        waitElementVisible(inputTitleLocator);
         type(title,inputTitleLocator);
         click(addListLocator);
     }
@@ -58,6 +60,10 @@ public class List_Page extends BaseTrello {
     public String listTitle() {
         waitElementVisible(listTitleInputLocator);
         return getText(listTitleInputLocator);
+    }
+    public String listChangeTitle() {
+//        waitElementVisible(listChangeTitleInputLocator);
+        return getText(listChangeTitleInputLocator);
     }
     public String copyListTitle() {
         waitElementVisible(copyListTitleInputLocator);
