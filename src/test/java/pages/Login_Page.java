@@ -12,9 +12,9 @@ public class Login_Page extends BaseTrello {
     By userNameLocator = By.xpath("//div[@title='agustin colque (agustincolque)']/span");
     By wrongCredentialsLocator = By.xpath("//div[@class='quick-switch']");
 
-//    public Login_Page(WebDriver driver){
-//        super(driver);
-//    }
+    public Login_Page(WebDriver driver){
+        super(driver);
+    }
     public void loginUser(String userName, String password) {
 
         if(isDisplayed(loginButtonLocator)){

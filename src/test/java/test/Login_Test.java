@@ -20,7 +20,7 @@ public class Login_Test {
     @BeforeMethod
     public void setUp() {
         url = "https://trello.com/login";
-        loginPage = new Login_Page();
+        loginPage = new Login_Page(driver);
         driver = loginPage.driverConnection(Browsers.CHROME, true);
         driver.manage().window().maximize();
         loginPage.goTo(url);

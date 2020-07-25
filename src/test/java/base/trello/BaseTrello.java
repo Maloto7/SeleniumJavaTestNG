@@ -1,6 +1,7 @@
 package base.trello;
 import org.openqa.selenium.By;
 import base.pom.selenium.Base;
+import org.openqa.selenium.WebDriver;
 
 public class BaseTrello extends Base{
 
@@ -17,13 +18,9 @@ public class BaseTrello extends Base{
     By confirmLocator = By.cssSelector(".js-confirm");
     By deleteBoardLocator = By.linkText("Permanently Delete Board…");
 
-
-
-    String title = "TestBoardTitle";
-
-//    public BaseTrello(WebDriver driver){
-//        super();
-//    }
+    public BaseTrello(WebDriver driver){
+        super(driver);
+    }
     public void loginTrello(String userName , String password) {
 
         type(userName,usernameLocator);
@@ -43,6 +40,7 @@ public class BaseTrello extends Base{
     public void createBoard(String title){
         waitElementVisible(newBoardLocator);
         click(newBoardLocator);
+        waitElementToBeClickable(inputTitleLocator);
         type(title,inputTitleLocator);
         waitElementToBeClickable(menuTeam);
         click(menuTeam);

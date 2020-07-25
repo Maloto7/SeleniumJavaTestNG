@@ -20,6 +20,9 @@ public class Base {
     private Actions actions;
     private WebDriverWait wait;
 
+    public Base(WebDriver driver){
+        this.driver = driver;
+    }
 
     public WebDriver driverConnection(Browsers browser, Boolean headless){
 

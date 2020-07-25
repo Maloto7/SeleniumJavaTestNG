@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 import pages.List_Page;
 import static org.testng.AssertJUnit.*;
 
-public class List_Test {
+public class Card_Test {
 
     private WebDriver driver;
     private String url;
@@ -25,6 +25,7 @@ public class List_Test {
         ListPage.goTo(url);
         ListPage.loginTrello(userName,password);
         ListPage.createBoard(boardName);
+        ListPage.createNewList("Test List");
     }
 
     @AfterMethod
@@ -34,23 +35,18 @@ public class List_Test {
     }
 
     @Test
-    public void createNewList() {
-        ListPage.createNewList("Test List");
-        assertEquals("Test List",ListPage.listTitle());
+    public void createNewCard() {
+        ListPage.createNewCard("Test card");
+        assertEquals("Test card",ListPage.cardTitle());
+
     }
 
     @Test
-    public void changeListName() {
-        ListPage.createNewList("Test list");
-        ListPage.changeNameList("Test list2");
-        assertEquals("Test list2", ListPage.listTitle());
+    public void changeName() {
+        ListPage.createNewCard("Test card");
+        ListPage.changeNameCard("Test card2");
+        assertEquals("Test card2", ListPage.cardTitle());
     }
 
-    @Test
-    public void copyList() {
-        ListPage.createNewList("Test list");
-        ListPage.copyListBoard("copy list");;
-        assertEquals("copy list", ListPage.copyListTitle());
-    }
 }
 

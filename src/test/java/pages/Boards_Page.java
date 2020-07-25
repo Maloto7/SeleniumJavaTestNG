@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import base.trello.BaseTrello;
+import org.openqa.selenium.WebDriver;
 
 
 public class Boards_Page extends BaseTrello {
@@ -12,6 +13,10 @@ public class Boards_Page extends BaseTrello {
     By menuTeam = By.cssSelector(".org-chooser-trigger > .icon-sm");
     By boardTitleLocator = By.cssSelector(".js-board-editing-target");
     By boardTitleInputLocator = By.cssSelector(".board-name-input");
+
+    public Boards_Page(WebDriver driver){
+        super(driver);
+    }
 
     public void createNewBoard(String title){
         waitElementVisible(newBoardLocator);

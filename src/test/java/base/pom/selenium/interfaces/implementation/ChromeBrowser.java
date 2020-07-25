@@ -10,7 +10,7 @@ public class  ChromeBrowser implements IBrowserConnection {
     private WebDriver driver;
 
     public WebDriver driverConnection(Boolean headless) {
-//        System.setProperty("webdriver.chrome.driver","./src/test/resources/chromedriver/chromedriver.exe");
+//        ystem.setProperty("webdriver.chrome.driver","./src/test/resources/chromedriver/chromedriver.exe");S
         WebDriverManager.chromedriver().setup();
         if (headless) {
             ChromeOptions options = new ChromeOptions();
