@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="base.pom.selenium.listeners.TestNGListeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="abc(failed)">
+    <classes>
+      <class name="test.List_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="createNewList"/>
+          <include name="copyList"/>
+        </methods>
+      </class> <!-- test.List_Test -->
+      <class name="test.Boards_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="changeBoardName"/>
+          <include name="addBoardButtonStatusDisable"/>
+          <include name="setUp"/>
+          <include name="createNewBoard"/>
+        </methods>
+      </class> <!-- test.Boards_Test -->
+      <class name="test.Login_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="successLogin"/>
+        </methods>
+      </class> <!-- test.Login_Test -->
+      <class name="test.Card_Test">
+        <methods>
+          <include name="createNewCard"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="changeName"/>
+        </methods>
+      </class> <!-- test.Card_Test -->
+    </classes>
+  </test> <!-- abc(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

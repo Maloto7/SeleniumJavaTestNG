@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SeleniumJavaTestNG" />
         <module name="Diplo3" />
         <module name="Diplo2" />
         <module name="Diplo" />
