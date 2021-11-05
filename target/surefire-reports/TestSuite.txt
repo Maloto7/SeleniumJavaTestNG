@@ -1,83 +1,83 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 6, Errors: 0, Skipped: 10, Time elapsed: 325.685 s <<< FAILURE! - in TestSuite
-test.Boards_Test.addBoardButtonStatusDisable  Time elapsed: 30.179 s  <<< FAILURE!
+Tests run: 18, Failures: 6, Errors: 0, Skipped: 10, Time elapsed: 286.677 s <<< FAILURE! - in TestSuite
+test.Boards_Test.addBoardButtonStatusDisable  Time elapsed: 30.076 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)
 	at test.Boards_Test.addBoardButtonStatusDisable(Boards_Test.java:51)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='board-tile mod-add'])[1]"}
-  (Session info: chrome=95.0.4638.69)
+  (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57946}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 43dc02da727895f3cd4c6985c60db340
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61028}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1872665a5f3876b56e2d34040b0a7e1b
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 	at test.Boards_Test.addBoardButtonStatusDisable(Boards_Test.java:51)
 
-test.Boards_Test.changeBoardName  Time elapsed: 30.328 s  <<< FAILURE!
+test.Boards_Test.changeBoardName  Time elapsed: 30.006 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)
 	at test.Boards_Test.changeBoardName(Boards_Test.java:43)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='board-tile mod-add'])[1]"}
-  (Session info: chrome=95.0.4638.69)
+  (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58000}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 68e48ad9cdf6511295657f8102141fe3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61074}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 318a652cb1c577f9f877b51c292d31d6
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 	at test.Boards_Test.changeBoardName(Boards_Test.java:43)
 
-test.Boards_Test.createNewBoard  Time elapsed: 29.938 s  <<< FAILURE!
+test.Boards_Test.createNewBoard  Time elapsed: 29.954 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)
 	at test.Boards_Test.createNewBoard(Boards_Test.java:36)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='board-tile mod-add'])[1]"}
-  (Session info: chrome=95.0.4638.69)
+  (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6954088b4479d8257554d5b770a682a1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 36a2410e7107da8758ab8fd9628edd34
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 	at test.Boards_Test.createNewBoard(Boards_Test.java:36)
 
-test.Card_Test.setUp  Time elapsed: 72.184 s  <<< FAILURE!
+test.Card_Test.setUp  Time elapsed: 70.789 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)
 	at test.Card_Test.setUp(Card_Test.java:27)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='board-tile mod-add'])[1]"}
-  (Session info: chrome=95.0.4638.69)
+  (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58113}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 277e69a94329e1cebba36ded3ff718f1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1cf4e39a4998a77209b194c82ca303bd
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 	at test.Card_Test.setUp(Card_Test.java:27)
 
-test.List_Test.setUp  Time elapsed: 40.279 s  <<< FAILURE!
+test.List_Test.setUp  Time elapsed: 40.819 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)
 	at test.List_Test.setUp(List_Test.java:27)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='board-tile mod-add'])[1]"}
-  (Session info: chrome=95.0.4638.69)
+  (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c8d4c758e49886ca20b070784faec661
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61381}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a057c510a4b29d1736e9ebac4c8537b
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 	at test.List_Test.setUp(List_Test.java:27)
 
-test.Login_Test.successLogin  Time elapsed: 31.009 s  <<< FAILURE!
+test.Login_Test.successLogin  Time elapsed: 31.072 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@title='agustin colque (agustincolque)']/span (tried for 30 second(s) with 500 milliseconds interval)
 	at test.Login_Test.successLogin(Login_Test.java:37)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -87,8 +87,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: da6088f1cd0aa327eacef63d771ee8a0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a2fd36847f8a5b37b609dddfc33ff91
 *** Element info: {Using=xpath, value=//div[@title='agustin colque (agustincolque)']/span}
 	at test.Login_Test.successLogin(Login_Test.java:37)
 

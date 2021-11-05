@@ -20,7 +20,7 @@ public class Card_Test {
     public void setUp(){
         url = "https://trello.com/login";
         ListPage = new List_Page(driver);
-        driver = ListPage.driverConnection(Browsers.CHROME,false);
+        driver = ListPage.driverConnection(Browsers.CHROME,true);
         driver.manage().window().maximize();
         ListPage.goTo(url);
         ListPage.loginTrello(userName,password);

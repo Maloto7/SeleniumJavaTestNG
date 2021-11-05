@@ -20,7 +20,7 @@ public class Boards_Test {
     public void setUp() {
         url = "https://trello.com/login";
         BoardsPage = new Boards_Page(driver);
-        driver = BoardsPage.driverConnection(Browsers.CHROME, false);
+        driver = BoardsPage.driverConnection(Browsers.CHROME, true);
         driver.manage().window().maximize();
         BoardsPage.goTo(url);
         BoardsPage.loginTrello(userName, password);
