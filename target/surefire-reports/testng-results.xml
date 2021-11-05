@@ -2,12 +2,12 @@
 <testng-results skipped="4" failed="4" ignored="0" total="10" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="283160" started-at="2021-11-05T13:40:40 BOT" finished-at="2021-11-05T13:45:23 BOT">
+  <suite name="All Test Suite" duration-ms="282531" started-at="2021-11-05T18:06:51 BOT" finished-at="2021-11-05T18:11:33 BOT">
     <groups>
     </groups>
-    <test name="abc" duration-ms="283160" started-at="2021-11-05T13:40:40 BOT" finished-at="2021-11-05T13:45:23 BOT">
+    <test name="abc" duration-ms="282531" started-at="2021-11-05T18:06:51 BOT" finished-at="2021-11-05T18:11:33 BOT">
       <class name="test.List_Test">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:test.List_Test@2b2948e2]" name="setUp" is-config="true" duration-ms="40826" started-at="2021-11-05T13:43:37 BOT" finished-at="2021-11-05T13:44:18 BOT">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:test.List_Test@2b2948e2]" name="setUp" is-config="true" duration-ms="41484" started-at="2021-11-05T18:09:42 BOT" finished-at="2021-11-05T18:10:24 BOT">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -59,10 +59,10 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61381}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a057c510a4b29d1736e9ebac4c8537b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0966938cff264fcea6ef0c2f6d380b2
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -87,7 +87,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="copyList()[pri:0, instance:test.List_Test@2b2948e2]" name="copyList" duration-ms="0" started-at="2021-11-05T13:44:18 BOT" finished-at="2021-11-05T13:44:18 BOT">
+        <test-method status="SKIP" signature="copyList()[pri:0, instance:test.List_Test@2b2948e2]" name="copyList" duration-ms="0" started-at="2021-11-05T18:10:24 BOT" finished-at="2021-11-05T18:10:24 BOT">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -139,10 +139,10 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61381}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a057c510a4b29d1736e9ebac4c8537b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0966938cff264fcea6ef0c2f6d380b2
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -167,15 +167,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- copyList -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.List_Test@2b2948e2]" name="tearDown" is-config="true" duration-ms="-1636134258009" started-at="2021-11-05T13:44:18 BOT" finished-at="1969-12-31T20:00:00 BOT">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.List_Test@2b2948e2]" name="tearDown" is-config="true" duration-ms="-1636150224318" started-at="2021-11-05T18:10:24 BOT" finished-at="1969-12-31T20:00:00 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:test.List_Test@2b2948e2]" name="setUp" is-config="true" duration-ms="-1636134258010" started-at="2021-11-05T13:44:18 BOT" finished-at="1969-12-31T20:00:00 BOT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="createNewList()[pri:0, instance:test.List_Test@2b2948e2]" name="createNewList" duration-ms="0" started-at="2021-11-05T13:44:18 BOT" finished-at="2021-11-05T13:44:18 BOT">
+        <test-method status="SKIP" signature="createNewList()[pri:0, instance:test.List_Test@2b2948e2]" name="createNewList" duration-ms="0" started-at="2021-11-05T18:10:24 BOT" finished-at="2021-11-05T18:10:24 BOT">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -227,10 +223,10 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61381}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a057c510a4b29d1736e9ebac4c8537b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0966938cff264fcea6ef0c2f6d380b2
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -255,41 +251,45 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewList -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.List_Test@2b2948e2]" name="tearDown" is-config="true" duration-ms="-1636134258012" started-at="2021-11-05T13:44:18 BOT" finished-at="1969-12-31T20:00:00 BOT">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:test.List_Test@2b2948e2]" name="setUp" is-config="true" duration-ms="-1636150224319" started-at="2021-11-05T18:10:24 BOT" finished-at="1969-12-31T20:00:00 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.List_Test@2b2948e2]" name="tearDown" is-config="true" duration-ms="-1636150224320" started-at="2021-11-05T18:10:24 BOT" finished-at="1969-12-31T20:00:00 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- test.List_Test -->
       <class name="test.Login_Test">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Login_Test@6ddf90b0]" name="setUp" is-config="true" duration-ms="10851" started-at="2021-11-05T13:44:18 BOT" finished-at="2021-11-05T13:44:28 BOT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Login_Test@6ddf90b0]" name="setUp" is-config="true" duration-ms="10151" started-at="2021-11-05T18:10:24 BOT" finished-at="2021-11-05T18:10:34 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="invalidPassword()[pri:0, instance:test.Login_Test@6ddf90b0]" name="invalidPassword" duration-ms="1843" started-at="2021-11-05T13:44:28 BOT" finished-at="2021-11-05T13:44:30 BOT">
+        <test-method status="PASS" signature="invalidPassword()[pri:0, instance:test.Login_Test@6ddf90b0]" name="invalidPassword" duration-ms="2948" started-at="2021-11-05T18:10:34 BOT" finished-at="2021-11-05T18:10:37 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidPassword -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Login_Test@6ddf90b0]" name="tearDown" is-config="true" duration-ms="729" started-at="2021-11-05T13:44:30 BOT" finished-at="2021-11-05T13:44:31 BOT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Login_Test@6ddf90b0]" name="tearDown" is-config="true" duration-ms="838" started-at="2021-11-05T18:10:37 BOT" finished-at="2021-11-05T18:10:38 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Login_Test@6ddf90b0]" name="setUp" is-config="true" duration-ms="9013" started-at="2021-11-05T13:44:31 BOT" finished-at="2021-11-05T13:44:40 BOT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Login_Test@6ddf90b0]" name="setUp" is-config="true" duration-ms="10134" started-at="2021-11-05T18:10:38 BOT" finished-at="2021-11-05T18:10:48 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="invalidUserName()[pri:0, instance:test.Login_Test@6ddf90b0]" name="invalidUserName" duration-ms="1847" started-at="2021-11-05T13:44:40 BOT" finished-at="2021-11-05T13:44:42 BOT">
+        <test-method status="PASS" signature="invalidUserName()[pri:0, instance:test.Login_Test@6ddf90b0]" name="invalidUserName" duration-ms="1934" started-at="2021-11-05T18:10:48 BOT" finished-at="2021-11-05T18:10:50 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUserName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Login_Test@6ddf90b0]" name="tearDown" is-config="true" duration-ms="725" started-at="2021-11-05T13:44:42 BOT" finished-at="2021-11-05T13:44:43 BOT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Login_Test@6ddf90b0]" name="tearDown" is-config="true" duration-ms="822" started-at="2021-11-05T18:10:50 BOT" finished-at="2021-11-05T18:10:51 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Login_Test@6ddf90b0]" name="setUp" is-config="true" duration-ms="8450" started-at="2021-11-05T13:44:43 BOT" finished-at="2021-11-05T13:44:51 BOT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Login_Test@6ddf90b0]" name="setUp" is-config="true" duration-ms="10901" started-at="2021-11-05T18:10:51 BOT" finished-at="2021-11-05T18:11:02 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="successLogin()[pri:0, instance:test.Login_Test@6ddf90b0]" name="successLogin" duration-ms="31122" started-at="2021-11-05T13:44:51 BOT" finished-at="2021-11-05T13:45:22 BOT">
+        <test-method status="FAIL" signature="successLogin()[pri:0, instance:test.Login_Test@6ddf90b0]" name="successLogin" duration-ms="31052" started-at="2021-11-05T18:11:02 BOT" finished-at="2021-11-05T18:11:33 BOT">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@title='agustin colque (agustincolque)']/span (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -337,10 +337,10 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a2fd36847f8a5b37b609dddfc33ff91
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c314f3c58ba746b5e364918352368450
 *** Element info: {Using=xpath, value=//div[@title='agustin colque (agustincolque)']/span}
 at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -365,17 +365,17 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Login_Test@6ddf90b0]" name="tearDown" is-config="true" duration-ms="1030" started-at="2021-11-05T13:45:22 BOT" finished-at="2021-11-05T13:45:23 BOT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Login_Test@6ddf90b0]" name="tearDown" is-config="true" duration-ms="735" started-at="2021-11-05T18:11:33 BOT" finished-at="2021-11-05T18:11:33 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- test.Login_Test -->
       <class name="test.Boards_Test">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Boards_Test@210366b4]" name="setUp" is-config="true" duration-ms="22787" started-at="2021-11-05T13:40:40 BOT" finished-at="2021-11-05T13:41:03 BOT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Boards_Test@210366b4]" name="setUp" is-config="true" duration-ms="12779" started-at="2021-11-05T18:06:51 BOT" finished-at="2021-11-05T18:07:04 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="addBoardButtonStatusDisable()[pri:0, instance:test.Boards_Test@210366b4]" name="addBoardButtonStatusDisable" duration-ms="30215" started-at="2021-11-05T13:41:03 BOT" finished-at="2021-11-05T13:41:33 BOT">
+        <test-method status="FAIL" signature="addBoardButtonStatusDisable()[pri:0, instance:test.Boards_Test@210366b4]" name="addBoardButtonStatusDisable" duration-ms="30152" started-at="2021-11-05T18:07:04 BOT" finished-at="2021-11-05T18:07:34 BOT">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -423,10 +423,10 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61028}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1872665a5f3876b56e2d34040b0a7e1b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51891}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d877b1a23fe818e6ddc8bcc580bf8f1
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -451,15 +451,15 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addBoardButtonStatusDisable -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Boards_Test@210366b4]" name="tearDown" is-config="true" duration-ms="721" started-at="2021-11-05T13:41:33 BOT" finished-at="2021-11-05T13:41:34 BOT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Boards_Test@210366b4]" name="tearDown" is-config="true" duration-ms="956" started-at="2021-11-05T18:07:34 BOT" finished-at="2021-11-05T18:07:35 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Boards_Test@210366b4]" name="setUp" is-config="true" duration-ms="11034" started-at="2021-11-05T13:41:34 BOT" finished-at="2021-11-05T13:41:45 BOT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Boards_Test@210366b4]" name="setUp" is-config="true" duration-ms="10399" started-at="2021-11-05T18:07:35 BOT" finished-at="2021-11-05T18:07:45 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="changeBoardName()[pri:0, instance:test.Boards_Test@210366b4]" name="changeBoardName" duration-ms="30073" started-at="2021-11-05T13:41:45 BOT" finished-at="2021-11-05T13:42:15 BOT">
+        <test-method status="FAIL" signature="changeBoardName()[pri:0, instance:test.Boards_Test@210366b4]" name="changeBoardName" duration-ms="30076" started-at="2021-11-05T18:07:45 BOT" finished-at="2021-11-05T18:08:15 BOT">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -507,10 +507,10 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61074}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 318a652cb1c577f9f877b51c292d31d6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6d657414df0928dce0b5174b2ffd6bb
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -535,15 +535,15 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeBoardName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Boards_Test@210366b4]" name="tearDown" is-config="true" duration-ms="946" started-at="2021-11-05T13:42:15 BOT" finished-at="2021-11-05T13:42:16 BOT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Boards_Test@210366b4]" name="tearDown" is-config="true" duration-ms="813" started-at="2021-11-05T18:08:15 BOT" finished-at="2021-11-05T18:08:16 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Boards_Test@210366b4]" name="setUp" is-config="true" duration-ms="10027" started-at="2021-11-05T13:42:16 BOT" finished-at="2021-11-05T13:42:26 BOT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Boards_Test@210366b4]" name="setUp" is-config="true" duration-ms="13929" started-at="2021-11-05T18:08:16 BOT" finished-at="2021-11-05T18:08:30 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="createNewBoard()[pri:0, instance:test.Boards_Test@210366b4]" name="createNewBoard" duration-ms="30009" started-at="2021-11-05T13:42:26 BOT" finished-at="2021-11-05T13:42:56 BOT">
+        <test-method status="FAIL" signature="createNewBoard()[pri:0, instance:test.Boards_Test@210366b4]" name="createNewBoard" duration-ms="30130" started-at="2021-11-05T18:08:30 BOT" finished-at="2021-11-05T18:09:00 BOT">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -591,10 +591,10 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 36a2410e7107da8758ab8fd9628edd34
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 169aea50654de95badee60f4d593fe56
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -619,13 +619,13 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewBoard -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Boards_Test@210366b4]" name="tearDown" is-config="true" duration-ms="712" started-at="2021-11-05T13:42:56 BOT" finished-at="2021-11-05T13:42:57 BOT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.Boards_Test@210366b4]" name="tearDown" is-config="true" duration-ms="760" started-at="2021-11-05T18:09:00 BOT" finished-at="2021-11-05T18:09:01 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- test.Boards_Test -->
       <class name="test.Card_Test">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:test.Card_Test@eec5a4a]" name="setUp" is-config="true" duration-ms="40053" started-at="2021-11-05T13:42:57 BOT" finished-at="2021-11-05T13:43:37 BOT">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:test.Card_Test@eec5a4a]" name="setUp" is-config="true" duration-ms="41408" started-at="2021-11-05T18:09:01 BOT" finished-at="2021-11-05T18:09:42 BOT">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -677,10 +677,10 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1cf4e39a4998a77209b194c82ca303bd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52106}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3208bec9eae21f33f6b8cfff1f436e43
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -705,7 +705,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="changeName()[pri:0, instance:test.Card_Test@eec5a4a]" name="changeName" duration-ms="0" started-at="2021-11-05T13:43:37 BOT" finished-at="2021-11-05T13:43:37 BOT">
+        <test-method status="SKIP" signature="changeName()[pri:0, instance:test.Card_Test@eec5a4a]" name="changeName" duration-ms="0" started-at="2021-11-05T18:09:42 BOT" finished-at="2021-11-05T18:09:42 BOT">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -757,10 +757,10 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1cf4e39a4998a77209b194c82ca303bd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52106}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3208bec9eae21f33f6b8cfff1f436e43
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -785,15 +785,15 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeName -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.Card_Test@eec5a4a]" name="tearDown" is-config="true" duration-ms="-1636134217176" started-at="2021-11-05T13:43:37 BOT" finished-at="1969-12-31T20:00:00 BOT">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.Card_Test@eec5a4a]" name="tearDown" is-config="true" duration-ms="-1636150182822" started-at="2021-11-05T18:09:42 BOT" finished-at="1969-12-31T20:00:00 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:test.Card_Test@eec5a4a]" name="setUp" is-config="true" duration-ms="-1636134217178" started-at="2021-11-05T13:43:37 BOT" finished-at="1969-12-31T20:00:00 BOT">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:test.Card_Test@eec5a4a]" name="setUp" is-config="true" duration-ms="-1636150182824" started-at="2021-11-05T18:09:42 BOT" finished-at="1969-12-31T20:00:00 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="createNewCard()[pri:0, instance:test.Card_Test@eec5a4a]" name="createNewCard" duration-ms="0" started-at="2021-11-05T13:43:37 BOT" finished-at="2021-11-05T13:43:37 BOT">
+        <test-method status="SKIP" signature="createNewCard()[pri:0, instance:test.Card_Test@eec5a4a]" name="createNewCard" duration-ms="0" started-at="2021-11-05T18:09:42 BOT" finished-at="2021-11-05T18:09:42 BOT">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='board-tile mod-add'])[1] (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -845,10 +845,10 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: headless chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-7U2KV0A', ip: '192.168.230.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1cf4e39a4998a77209b194c82ca303bd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Agustin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52106}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3208bec9eae21f33f6b8cfff1f436e43
 *** Element info: {Using=xpath, value=(//div[@class='board-tile mod-add'])[1]}
 at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -873,7 +873,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewCard -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.Card_Test@eec5a4a]" name="tearDown" is-config="true" duration-ms="-1636134217180" started-at="2021-11-05T13:43:37 BOT" finished-at="1969-12-31T20:00:00 BOT">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.Card_Test@eec5a4a]" name="tearDown" is-config="true" duration-ms="-1636150182825" started-at="2021-11-05T18:09:42 BOT" finished-at="1969-12-31T20:00:00 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

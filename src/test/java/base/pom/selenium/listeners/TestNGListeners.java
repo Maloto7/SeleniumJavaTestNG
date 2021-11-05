@@ -14,7 +14,7 @@ public class TestNGListeners implements ITestListener, ISuiteListener {
     ExtentReports extent;
     ExtentTest test;
     public void onStart(ISuite suite) {
-        spark = new ExtentSparkReporter("./reports/extent.html");
+        spark = new ExtentSparkReporter("./reports/extent2.xml");
         extent = new ExtentReports();
         extent.attachReporter(spark);
     }
