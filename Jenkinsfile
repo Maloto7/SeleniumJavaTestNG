@@ -10,7 +10,7 @@ pipeline {
             }
             post {
                 success {
-                    testng 'target/surefire-reports/testng-results.xml'
+                    junit 'target/surefire-reports/testng-results.xml'
                 }
             }
         }
