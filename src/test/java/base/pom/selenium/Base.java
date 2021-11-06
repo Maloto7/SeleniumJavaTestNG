@@ -104,6 +104,11 @@ public class Base {
     public void type(String inputText, By locator){
         driver.findElement(locator).sendKeys(inputText);
     }
+
+    public void type(WebElement element, String inputText){
+        element.sendKeys(inputText);
+    }
+
     public void typeInFrame(String inputText, By locator){
 
         driver.switchTo().frame(0);

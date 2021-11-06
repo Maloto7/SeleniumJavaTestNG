@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="base.pom.selenium.listeners.TestNGListeners"></listener>
     </listeners>
-    <test verbose="2" preserve-order="true" name="abc">
+    <test verbose="2" preserve-order="true" name="Jenkins">
         <packages>
             <package name="test"></package>
         </packages>
