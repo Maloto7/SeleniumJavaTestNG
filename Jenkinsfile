@@ -9,8 +9,8 @@ pipeline {
                 bat 'mvn test'
             }
             post {
-                success {
-                    junit 'target/surefire-reports/testng-results.xml'
+                always {
+                    step([$class: 'Publisher', reportFilenamePattern: 'target/surefire-reports/testng-results.xml'])
                 }
             }
         }
