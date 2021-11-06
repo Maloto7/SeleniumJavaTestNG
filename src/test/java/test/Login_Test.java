@@ -17,7 +17,7 @@ public class Login_Test {
     public void setUp() {
         url = "http://qa-trainingw7:86/default.aspx";
         loginPage = new LoginPage(driver);
-        driver = loginPage.driverConnection(Browsers.CHROME, false);
+        driver = loginPage.driverConnection(Browsers.CHROME, true);
         driver.manage().window().maximize();
         loginPage.goTo(url);
     }
