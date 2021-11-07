@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.968 s <<< FAILURE! - in TestSuite
-test.Login_Test.PostAdLoged  Time elapsed: 1.749 s  <<< FAILURE!
-java.lang.AssertionError: expected:<true> but was:<false>
-	at test.Login_Test.PostAdLoged(Login_Test.java:33)
-

@@ -13,6 +13,9 @@ pipeline {
                     step([$class: 'Publisher', reportFilenamePattern: 'target/surefire-reports/testng-results.xml'])
                 }
             }
+            script {
+                allure results: [[path: 'allure-results']]
+            }
         }
     }
 }
