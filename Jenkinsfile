@@ -14,11 +14,11 @@ pipeline {
                 }
             }
         }
-    }
-    stage('reports') {
-        steps {
-            script {
-               allure results: [[path: 'allure-results']]
+        stage('reports') {
+            steps {
+                script {
+                   allure results: [[path: 'allure-results']]
+                }
             }
         }
     }
