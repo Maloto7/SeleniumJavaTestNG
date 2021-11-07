@@ -30,7 +30,7 @@ public class Login_Test {
     @Test
     public void PostAdLoged() {
         loginPage.login("asfasd000", "adsf123");
-        assertEquals(true,loginPage.logingErrorDisplayed("Your2 login attempt was not successful. Please try again."));
+        assertEquals(true,loginPage.logingErrorDisplayed("Your login attempt was not successful. Please try again."));
 
     }
 
