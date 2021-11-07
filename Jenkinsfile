@@ -11,7 +11,13 @@ pipeline {
             post {
                 always {
                     step([$class: 'Publisher', reportFilenamePattern: 'target/surefire-reports/testng-results.xml'])
-                    allure([results: [[path: 'allure-results']]])
+                    allure([
+                        includeProperties: false,
+                        jdk: '',
+                        properties: [],
+                        reportBuildPolicy: 'ALWAYS',
+                        results: [[path: 'allure-results']]
+                    ])
                 }
             }
         }
