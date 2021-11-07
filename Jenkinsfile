@@ -2,6 +2,7 @@ pipeline {
     agent any
     tools{
         maven 'M2_HOME'
+        allure 'allure2'
     }
     stages {
         stage('Test') {
