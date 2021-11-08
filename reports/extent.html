@@ -48,7 +48,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Nov 7, 2021 05:36:51 PM</span>
+                    <span class="badge badge-primary">Nov 7, 2021 08:27:36 PM</span>
                 </a>
             </li>
         </ul>
@@ -93,7 +93,7 @@
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-						
+						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
 						
@@ -106,28 +106,28 @@
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="pass" test-id="1"
+				<li class="test-item"  status="fail" test-id="1"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">PostAdLoged</p>
-							<p class="duration text-sm">0h 0m 0s+14ms</p>
-							<span class="datetime">17:36:59 PM</span>
+							<p class="name">failTest</p>
+							<p class="duration text-sm">0h 0m 2s+692ms</p>
+							<span class="datetime">20:27:46 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">PostAdLoged</h5>
-									<span class='badge badge-success'>11.07.2021 17:36:59</span>
-									<span class='badge badge-danger'>11.07.2021 17:36:59</span>
-									<span class='badge badge-default'>0h 0m 0s+14ms</span>
+									<h5 class="test-status text-fail">failTest</h5>
+									<span class='badge badge-success'>11.07.2021 20:27:46</span>
+									<span class='badge badge-danger'>11.07.2021 20:27:49</span>
+									<span class='badge badge-default'>0h 0m 2s+692ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -144,16 +144,71 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>5:36:59 PM</td>
+				<td>8:27:46 PM</td>
 				<td>
 						The test started
 				</td>
 			</tr>
 			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>5:36:59 PM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>8:27:49 PM</td>
 				<td>
-						The test Skipp
+						The test failed; Test Name: failTest; Message: java.lang.AssertionError: expected:"true" but was:"false"
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="2"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">passTest</p>
+							<p class="duration text-sm">0h 0m 1s+587ms</p>
+							<span class="datetime">20:27:58 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">passTest</h5>
+									<span class='badge badge-success'>11.07.2021 20:27:58</span>
+									<span class='badge badge-danger'>11.07.2021 20:28:00</span>
+									<span class='badge badge-default'>0h 0m 1s+587ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>8:27:58 PM</td>
+				<td>
+						The test started
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>8:28:00 PM</td>
+				<td>
+						The test passed successfully
 				</td>
 			</tr>
 	</tbody>
@@ -192,12 +247,12 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'>
+					<div><small data-tooltip='50%'>
 						<b>1</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> tests failed, 
+						<small data-tooltip='50%'><b>1</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -215,10 +270,10 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+					<div><small data-tooltip='25%'><b>1</b> events passed</small></div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> events failed, 
-						<b data-tooltip='100%'>2</b> others
+						<small data-tooltip='25%'><b>1</b> events failed, 
+						<b data-tooltip='50%'>2</b> others
 						</small>
 					</div>
 				</div>
@@ -232,10 +287,10 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Tests</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">1</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">2</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>100.00%</span>
+							<span>50.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -251,7 +306,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Nov 7, 2021 05:36:51 PM</h4>
+							<h4 class="font-weight-light mt-4">Nov 7, 2021 08:27:36 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -267,7 +322,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 8s+197ms</h4>
+							<h4 class="font-weight-light mt-4">0h 0m 26s+506ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -297,14 +352,14 @@
 </div>
 <script>
 	var statusGroup = {
-	    parentCount: 1,
+	    parentCount: 2,
 		passParent: 1,
-		failParent: 0,
+		failParent: 1,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 0,
+		exceptionsParent: 1,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -325,9 +380,9 @@
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 2,
-		passEvents: 0,
-		failEvents: 0,
+		eventsCount: 4,
+		passEvents: 1,
+		failEvents: 1,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -339,7 +394,7 @@
 </script>
 <script>
 	var timeline = {
-	        "PostAdLoged":0.014
+	        "failTest":2.692,"passTest":1.587
 	};
 </script>
                 </div>
