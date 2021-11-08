@@ -16,8 +16,8 @@ pipeline {
                      keepAll: true,
                      reportDir: 'reports',
                      reportFiles: 'extent.html',
-                     reportName: 'My Reports',
-                     reportTitles: 'The Report'])
+                     reportName: 'Reports',
+                     reportTitles: 'Report'])
                      allure results: [[path: 'allure-results']]
                 }
             }
